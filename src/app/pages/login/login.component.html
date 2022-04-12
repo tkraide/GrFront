@@ -1,0 +1,53 @@
+<div class="login-conteiner" [style.height.px]="loginFormHeight">
+  <h1>O {{ product?.name }} lhe dá boas vindas.</h1>
+  <form #loginForm class="login-form" #formElement="ngForm" (ngSubmit)="onSubmit()" [formGroup]="pageForm" novalidate>
+    <div class="form-content">
+      <mat-form-field class="example-form-field">
+        <mat-label>Email</mat-label>
+        <input type="text" required matInput formControlName="email" name="email" tabindex="1" />
+        <button mat-button matSuffix mat-icon-button aria-label="Clear">
+          <mat-icon>email</mat-icon>
+        </button>
+      </mat-form-field>
+
+      <mat-form-field class="example-form-field">
+        <mat-label>Senha</mat-label>
+        <input type="password" required matInput formControlName="password" name="password" tabindex="2"  />
+        <button mat-button matSuffix mat-icon-button aria-label="Clear">
+          <mat-icon aria-hidden="false" aria-label="Example home icon">lock</mat-icon>
+        </button>
+      </mat-form-field>
+      <div class="botoesLogin">
+        <button mat-flat-button color="primary" [style.width.%]="'40'">Entrar</button>
+        <button mat-flat-button [style.width.%]="'40'" [routerLink]="['/page/cadastro']" routerLinkActive="active" class="cadastro">Cadastre-se</button>
+      </div>
+      
+    </div>
+    <div class="form-text">
+      <div>
+        <a [routerLink]="['/page/recuperarSenha']" class="esqueci">Esqueci minha senha</a>
+      </div>
+      <!-- <div>
+        <a [routerLink]="['/page/cadastro']" routerLinkActive="active" mat-icon-button class="cadastro">
+          <mat-icon>article</mat-icon>
+          <span>Cadastre-se</span>
+        </a>
+      </div> -->
+    </div>
+  </form>
+</div>
+<div class="login-conteiner-shadow" [style.height.px]="loginFormHeight"></div>
+<div class="area">
+  <ul class="circles">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+</div>
