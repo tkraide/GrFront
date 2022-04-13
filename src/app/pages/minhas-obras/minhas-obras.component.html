@@ -1,31 +1,58 @@
-<mat-toolbar color="primary">
-    <span>Minhas Obras</span>
-    <button mat-button (click)="toggleGridColumns()" fxHide.lt-md>
-        <span *ngIf="gridColumns === 5">Quatro Colunas</span>
-        <span *ngIf="gridColumns === 4">Cinco Colunas</span>
-    </button>
-</mat-toolbar>
-<div class="divNovaObra">
-    <a [routerLink]="['/page/registrarObra']" class="novaObra">Registrar nova Obra</a>
-</div>
-<div class="content">
-    <div fxLayout="row wrap" fxLayoutGap="16px grid">
-        <div [fxFlex]="(100/gridColumns) + '%'" fxFlex.xs="100%" fxFlex.sm="33%" *ngFor="let num of [1,2,3,4,5,6]">
-            <mat-card class="mat-elevation-z4">
-                <mat-card-header>
-                    <mat-card-title>Título {{num}}</mat-card-title>
-                </mat-card-header>
-                <img mat-card-image src=".\..\assets\images\mountains.jpg" class="imagemCard">
-                <mat-card-content>
-                    <p>Descrição da obra</p>
-                </mat-card-content>
-                <mat-card-actions>
-                    <div class="botoesCartao">
-                        <button mat-button>Certificado</button>
-                        <button mat-button [routerLink]="['/page/detalheObra']">Detalhes</button>
-                    </div>
-                </mat-card-actions>
-            </mat-card>
-        </div>
+<div class="page">
+    
+    <img mat-card-image src=".\..\assets\images\mountains.jpg" id="imagemSobre">
+    <div class="DivSer">
+        <br>
+      <h1>Serviços</h1>
+      <p class="pServico">Site Profissional para Empresas personalizado para seu Negócio.
+        Logotipo com Design Profissional e de Qualidade para fazer sua Empresa se destacar. 
+        Personalizamos o seu Google Business gerando mais Interesse para o seu Público Digital
+        Criação de Post e Otimização de Páginas para o Facebook e o Instagram com Métodos que Geram mais Engajamento e Visualização</p>
+        <br><br>
     </div>
-</div>
+  
+  <body>
+    <div class="content">
+
+      <div >
+        <div>
+            <h2>Criação de Site Profissional</h2>
+            <img mat-card-image src=".\..\assets\images\mountains.jpg" id="imagemSobre">
+            <p class="TextGrid">Nos desenvolvemos sites seguindo todas as diretrizes e critérios impostos pelo Google, gerando um melhor ranqueamento do Google para seu Negócio, além de ser Totalmente Responsivo e 100% Personalizado com Layouts exclusivos para sua Empresa. Com uma aparência bonita e moderna é o que irá transmitir confiança a seus visitantes.</p>
+            <div class="botoesCartao">
+                <button mat-button>Whatsapp</button>
+            </div>
+        </div>
+      </div>
+      <div>
+        <div>
+           <h2>Criação de Logotipo Profissional</h2>
+            <img mat-card-image src=".\..\assets\images\mountains.jpg" id="imagemSobre">
+            <p class="TextGrid">Nossos Logotipo possuem um Design Especial e de Qualidade para fazer seu negócio se destacar entre seus Concorrentes.Podendo ter sua Marca de Sucesso em até 48 horas.</p>
+            <div class="botoesCartao">
+                <button mat-button>Whatsapp</button>
+            </div>
+        </div>
+      </div>
+      <div>
+        <h2>Otimização do Google Business</h2>
+        <img mat-card-image src=".\..\assets\images\mountains.jpg" id="imagemSobre">
+        <p class="TextGrid">Somos Consultor de Otimização de Motores de Busca do Google, Realizamos Procedimentos Para Melhorar a Visibilidade do seu Negócio na Internet.Atráves do Google Business Aperfeiçoamos a Quantidade de Informações e Ranqueamento da Sua Empresa no Google.</p>
+        <div class="botoesCartao">
+            <button mat-button>Whatsapp</button>
+        </div>
+      </div>
+      <div>
+        <h2>Post e Gerenciamento de Facebook e Instagram</h2>
+        <img mat-card-image src=".\..\assets\images\mountains.jpg" id="imagemSobre">
+        <p class="TextGrid">Uma das Especialidades da Gr Business é o Marketing Digital, fazemos Post e Gerenciamos Utilizando Métodos Revolucionários que Geram Mais Engajamento e Visualização para suas Páginas e Post no Facebook e Instagram.</p>
+        <div class="botoesCartao">
+            <button mat-button>Whatsapp</button>
+        </div>
+      </div>
+      
+    
+    </div>
+  </body>
+  </div>
+  <footer class="rodape"></footer>

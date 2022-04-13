@@ -2,13 +2,6 @@ mat-toolbar {
     justify-content: space-between;
 }
 
-.content {
-    padding: 16px;
-}
-
-.content > mat-card {
-    margin-bottom: 16px;
-}
 
 .imagemCard{
     object-fit: cover;
@@ -20,22 +13,21 @@ mat-toolbar {
     color: darkgoldenrod;
 }
 
-.novaObra{
-    font-size: 15px;
+.TextGrid{
+    font-size: 18px;
     font-family: "Nunito Sans";
-    color:  darkgoldenrod;
     text-decoration: none;
     font-weight: 600;
-    background-color: white;
-    padding: 4px;
-    border-radius: 4px;
-    box-shadow: 1px 1px;
+    
+    
     //text-shadow: 1px 1px 0px #8a8a8a;
 }
 
-.divNovaObra{
-    display: block;
-    text-align: right;
-    margin-top: 10px;
-    margin-right: 15px;
+
+.content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width:  1366px;
+    margin: 0 auto;
+    background-color: rgb(246 243 239);
 }
