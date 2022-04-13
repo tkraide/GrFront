@@ -1,15 +1,63 @@
 .page {
-  table {
-    width: 100%;
-  }
+  
+    text-align: center;
 }
 
 .content{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  max-width:  1366px;
   margin: 0 auto;
-  grid-gap: 50px;
   text-align: center;
+  width: 1300px
+
+}
+
+.bPort{
+  color: #049f30;
+
+
+
+}
+h1{
+  margin-top: 20px;
+  font-size: 45px;
+  margin-bottom: 30px;
+}
+
+.pPort{
+  font-size: 20px;
+}
+#b{
+  font-size: 20px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+#imagemSobre{
+  width: 350px;
+  height: 200px;
+  margin-top: 30px;
+  box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 13%);
+  border-radius: 3px;
+}
+.pDesc{
+  margin-top: 10px;
+  margin-bottom: 5px;
+  color: #004026;
+  font-size:15px;
+  font-family: Verdana;
+}
+.h2Port{
+  margin-bottom: 8px;
+  color: #0e6709;
+  font-size: 24px;
+  font-family: Cambria;
+}
+
+.pTipo{
+  color: #00ab43;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: calibri;
 
 }
