@@ -41,7 +41,7 @@ hr{
     border-color: rgb(17,17,17);
 }
 h1{
-        font: var(--font_0);
+        font-family: Helvetica;
         line-height: 1.1em;
         text-align: center;
         font-size: 42px;
@@ -74,7 +74,7 @@ h2{
     letter-spacing: normal;
 }
 
-@media only screen and (max-device-width: 3000px) {
+@media only screen and (max-device-width: 1366px) {
     .parallax {
       background-attachment: scroll;
     }
@@ -103,7 +103,6 @@ h2{
     background-image: url(..\..\..\assets\images\TecnologiaImage1.jpg);
 }
 .TextGrid{
-    color: rgb(var(--color_15));
     line-height: 1.7em;
     text-align: center;
     font-size: 22px;

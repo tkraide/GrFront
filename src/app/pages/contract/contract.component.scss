@@ -1,46 +1,63 @@
 ::ng-deep {
-  .mat-header-cell {
-    color: #414141;
-    font-size: 14px;
-    font-weight: bold;
-  }
-
-  @media print {
-    #contractPaginator,
-    #contractSearch,
-    .page-header-item,
-    .hideOnPrint {
-      display: none;
-    }
-    .page {
-      box-shadow: none;
-    }
-    table {
-      border: 0;
-      margin: 0;
-    }
-    th {
-      font-size: 12px !important;
-      font-family: Arial, Helvetica, sans-serif !important;
-      padding: 2px 3px !important;
-    }
-    .mat-cell {
-      font-size: 12px !important;
-      font-family: Arial, Helvetica, sans-serif !important;
-      padding: 2px 3px !important;
-    }
-  }
+  h1{
+    font-family: Helvetica;
+    line-height: 1.1em;
+    text-align: center;
+    font-size: 42px;
+    font-weight: 700;
 }
-.page {
-  table {
-    width: 100%;
-  }
+#pSobre{
+    line-height: 1.7em;
+    text-align: center;
+    font-size: 22px;
+    letter-spacing: 0.01em;
+    font-family: Verdana;
+    margin-top: 20px;
+}
+#Contato{
+  font-family: Trebuchet MS;
+  line-height: 1.1em;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+#Atendimento{
+  font-family: Trebuchet MS;
+  line-height: 1.1em;
+  text-align: center;
+  font-size: 36px;
+  margin-top: 110px;
+  margin-bottom: 110px;
+}
+.h2Hora{
+  font-family: Trebuchet MS;
+  line-height: 1.1em;
+  text-align: center;
+  font-size: 33px;
+  font-weight: 700;
+  margin-bottom: 25px;
 }
 
-.list-signatures-action {
-  cursor: pointer;
+.pHora{
+  line-height: 1.7em;
+  text-align: center;
+  font-size: 20px;
+  letter-spacing: 0.01em;
+  font-family: Georgia;
+  margin-top:-5px;
+}
 
-  &:hover{
-    text-decoration: underline;
-  }
+.content{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 600px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+
+}
+.Back{
+  background-color: rgb(246,243,239);
+
+}
 }
