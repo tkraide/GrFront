@@ -5,6 +5,8 @@
       font-weight: bold;
     }
   }
+
+
 //   .page {
 //     .page-timeline {
 //       width: 100%;
@@ -18,76 +20,42 @@
     line-height: 36px;
     text-align: center;
 }
+.content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width:  1366px;
+    margin: 0 auto;
+    background-color: rgb(246 243 239);
+    height: 2000px;
+}
 
-.page{
-    color: #000;
-    max-width: 100%;
-    font-family: "Nunito Sans";
-    h1{
-        font-family: inherit;
-        font-weight: 400;
-        font-size: 30px;
+hr{
+    position: relative;
+    margin: 12px 0px 36px calc((100% - 490px) * 0.5);
+    left: 230px;
+    justify-self: start;
+    align-self: start;
+    height: 1px;
+    width: 22px;
+    background-color: rgb(17,17,17);
+    border-color: rgb(17,17,17);
+}
+h1{
+        font: var(--font_0);
+        line-height: 1.1em;
+        text-align: center;
+        font-size: 42px;
+        font-weight: 700;;
     }
-}
-.page-Content{
-    width: 80%;
-    margin-left: 10%;
-}
-label{
-    display: block;
-    margin-bottom: 10px;
-    margin-left: 32%;
-    font-weight: 400;
-    font-size: 15px;
-}
-span{
-    display: block;
-    margin-bottom: 10px;
-    margin-left: 60%;
-    font-weight: 500;
-    font-size: 9px;
-    color: red;
-}
-input[type="text"],input[type="email"],input[type="password"]{
-    margin-bottom: 20px;
-    outline: none;
-    display: block;
-    width: 32%;
-    margin-left: 34%;
-    border: 1px solid darken(gray, 15%);
-    //margin: 0 0 20px;
-    padding: 10px 15px;
-    box-sizing: border-box;
-    font-weight: 400;
-}
 
-.botoesCadastrar{
-    //width: 30%;
+h2{
     text-align: center;
-    font-size: 15px;
-    .cadastrar{
-        margin-left: 0;
-        border-radius: 9px;
-        margin-top: 25px;
-        padding: 10px;
-        background-color: #203e7e;
-        width: 13%;
-        color: #fff; 
-        font-weight: 500; 
-    }
-    // .cadastrar:disabled{
-    //     background-color: gray;
-    //     color: #000;
-    // }
+    font-family: 'Nunito Sans';
+    font-weight: 700;
+    margin-top: 179px;
+    font-size: 32px;
+    margin-bottom: 35px;
 }
-
-// .checkArtista, .checkCliente{
-//     margin-left: 34%;
-//     display: -webkit-box;
-// }
-// .checkArtista label, .checkCliente label{
-//     margin-left: 2%;
-// }
 
 .rodape{
     margin: 0;
@@ -104,4 +72,43 @@ input[type="text"],input[type="email"],input[type="password"]{
     border-top: 5px solid #fff;
     height: 64px;
     letter-spacing: normal;
+}
+
+@media only screen and (max-device-width: 3000px) {
+    .parallax {
+      background-attachment: scroll;
+    }
+  }
+  
+.parallax {
+    /* The image used */
+    
+  
+    /* Set a specific height */
+    min-height: 400px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#Qualidade{
+    background-image: url(..\..\..\assets\images\QualidadeImage1.jpg);
+}
+#Design{
+    background-image: url(..\..\..\assets\images\DesignImage1.jpg);
+}
+#Tecnologia{
+    background-image: url(..\..\..\assets\images\TecnologiaImage1.jpg);
+}
+.TextGrid{
+    color: rgb(var(--color_15));
+    line-height: 1.7em;
+    text-align: center;
+    font-size: 22px;
+    letter-spacing: 0.01em;
+    padding: 102px;
+    margin-top: -108px;
+    font-family: Verdana;
 }
