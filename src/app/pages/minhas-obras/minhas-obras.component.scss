@@ -14,20 +14,51 @@ mat-toolbar {
 }
 
 .TextGrid{
-    font-size: 18px;
-    font-family: "Nunito Sans";
+    font-size: 17px;
+    font-family: Verdana;
     text-decoration: none;
-    font-weight: 600;
+    width: 345px;
+    line-height: 1.8em;
+    text-align: justify;
+    margin-top: 10px;
+    
+    
     
 
 }
 .content{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     margin: 0 auto;
-    grid-gap: 50px;
- 
+    width: 85%;
+    grid-gap: 25px;
     
+}
+#imagemSobre{
+        width: 350px;
+        height: 300px;
+        margin-top: 30px;
+        box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 13%);
+        border-radius: 10px;
+          }
+
+
+.botoesCartao{
+    width: 345px;
+    margin-top: 20px;
+}
+.h2Content{
+    color: #0B5345;
+    font-size:25px;
+    font-family: calibri;
 
 }
 
+.hrContent{
+    background-color: #2ECC71;
+    width: 345px;
+    height: 0px;
+    border-color: #2ECC71;
+    margin-bottom: -11px;
+    margin-top: 10px;
+}

@@ -20,14 +20,15 @@
   text-align: center;
   font-size: 40px;
   font-weight: 700;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+  margin-top: 20px;
 }
 #Atendimento{
   font-family: Trebuchet MS;
   line-height: 1.1em;
   text-align: center;
   font-size: 36px;
-  margin-top: 110px;
+  margin-top: 90px;
   margin-bottom: 110px;
 }
 .h2Hora{
@@ -63,4 +64,14 @@
 #ContatoDiv{
   text-align: center;
 }
+}
+#imagemSobre{
+  width: 800px;
+  height: 600px;
+  box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 13%);
+  border-radius: 10px;
+}
+.botoesCartao{
+  margin-bottom: 30px;
+
 }
