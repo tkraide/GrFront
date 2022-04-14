@@ -82,7 +82,6 @@ h2{
   
 .parallax {
     /* The image used */
-    
   
     /* Set a specific height */
     min-height: 400px;
@@ -91,16 +90,16 @@ h2{
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 }
 #Qualidade{
-    background-image: url(..\..\..\assets\images\QualidadeImage1.jpg);
+    background-image: url(..\..\..\assets\images\QualidadeImage.jpg);
 }
 #Design{
-    background-image: url(..\..\..\assets\images\DesignImage1.jpg);
+    background-image: url(..\..\..\assets\images\DesignImage.jpg);
 }
 #Tecnologia{
-    background-image: url(..\..\..\assets\images\TecnologiaImage1.jpg);
+    background-image: url(..\..\..\assets\images\TecnologiaImage.jpg);
 }
 .TextGrid{
     line-height: 1.7em;

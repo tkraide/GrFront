@@ -14,12 +14,11 @@ mat-toolbar {
 }
 
 .TextGrid{
-    font-size: 17px;
+    font-size: 16px;
     font-family: Verdana;
     text-decoration: none;
     width: 345px;
     line-height: 1.8em;
-    text-align: justify;
     margin-top: 10px;
     
     
@@ -32,6 +31,7 @@ mat-toolbar {
     margin: 0 auto;
     width: 85%;
     grid-gap: 25px;
+    margin-top: 140px
     
 }
 #imagemSobre{
@@ -61,4 +61,36 @@ mat-toolbar {
     border-color: #2ECC71;
     margin-bottom: -11px;
     margin-top: 10px;
+}
+#SobreImg{
+    width: 60%;
+    height: 400px;
+    object-fit: cover;
+    object-position: 50% 50%;
+    margin-top: 80px;
+    margin-left: 90px;
+}
+
+.DivSer{
+    width: 55%;
+    height: 350px;
+    background-color: white;
+    display: flex;
+    position: absolute;
+    margin-left: 700px;
+    margin-top: -340px;
+}
+#Serv{
+    margin-left: 50px;
+    font-size: 55px;
+    margin-top: 30px;
+}
+.pServico{
+    font-size: 16px;
+    font-family: arial;
+    margin-top: 110px;
+    margin-left: -210px;
+    width: 65%;
+    line-height:  1.8em;
+    color: #1a1a1a;
 }
