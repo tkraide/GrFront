@@ -1,22 +1,33 @@
-<mat-toolbar color="primary" class="mat-toolbar">
-  <span id="logo"><img src="/assets/docchain.svg" alt="" srcset="" /></span>
-  <span class="spacer">{{user?.nome}}</span>
+<mat-toolbar  class="mat-toolbar">
+<div class="content123">
+  <div id="logo">
+  <span ><img src="/assets/grbusiness.svg" alt="" srcset="" /></span>
+</div>
+<div class="Header">
   <a [routerLink]="['/page/home']" routerLinkActive="active" mat-icon-button class="menu-item">
     <mat-icon>home</mat-icon>
     <span>Home</span>
   </a>
-  <a *ngIf="user?.type==='hoster'" [routerLink]="['/page/partner']" routerLinkActive="active" mat-icon-button class="menu-item">
-    <mat-icon>people_alt</mat-icon>
-    <span>Parceiros</span>
+  <a [routerLink]="['/page/minhasObras']" routerLinkActive="active" mat-icon-button class="menu-item">
+    <mat-icon>assessment</mat-icon>
+    <span>Serviços</span>
+  </a>
+  <a [routerLink]="['/page/partner']" routerLinkActive="active" mat-icon-button class="menu-item">
+    <mat-icon>assignment</mat-icon>
+    <span>Portfólio</span>
+  </a>
+  <a [routerLink]="['/page/cadastro']" routerLinkActive="active" mat-icon-button class="menu-item">
+    <mat-icon>computer</mat-icon>
+    <span>Processo</span>
   </a>
   <a [routerLink]="['/page/contract']" routerLinkActive="active" mat-icon-button class="menu-item">
-    <mat-icon>article</mat-icon>
-    <span>Contratos</span>
+    <mat-icon>contact_mail</mat-icon>
+    <span>Contato</span>
   </a>
-  <a [routerLink]="['/']" mat-icon-button class="menu-item">
-    <mat-icon>logout</mat-icon>
-    <span>Sair</span>
-  </a>
+</div>
+</div>
+ 
+ 
 </mat-toolbar>
 <!-- <div class="disposicaoPagina"> -->
 <div class="main-content">

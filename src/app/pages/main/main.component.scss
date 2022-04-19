@@ -27,9 +27,27 @@ span.spacer:not(.rodape) {
 //   'rodape';
 // }
 
+
+ 
+.content123{
+  display: inline-grid;
+}
+#logo{
+  padding: 30px;
+  margin-top: 12px;
+  justify-items: start;
+}
 .mat-toolbar {
   position: fixed;
   z-index: 9;
+  background: #f3f3f3;
+  color: #22b850;
+}
+.Header{
+ justify-items: end;
+}
+
+
   .menu-item {
     line-height: normal;
     text-align: center;
@@ -42,17 +60,18 @@ span.spacer:not(.rodape) {
     padding-left: 10px;
     margin-left: 20px;
     padding-top: 10px;
+    
 
     span {
       display: block;
     }
     &.active,
     &:hover {
-      background-color: #fff;
-      color: #203e7e;
+      background-color: rgb(12, 187, 70);
+      color: #ffffff;
     }
   }
-}
+
 @media print {
   .mat-toolbar {
     display: none;
@@ -61,7 +80,7 @@ span.spacer:not(.rodape) {
 
 ::ng-deep {
   .mat-toolbar {
-    border-bottom: 5px solid #fff;
+    border-bottom: 5px solid rgb(12, 187, 70);
   }
   @media (prefers-color-scheme: dark) {
   }
@@ -76,6 +95,6 @@ span.spacer:not(.rodape) {
     background: #888;
   }
   ::-webkit-scrollbar-thumb:hover {
-    background: #203e7e;
+    background: #c9c9c9;
   }
 }
