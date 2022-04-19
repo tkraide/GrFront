@@ -61,7 +61,7 @@ h1{
 .pHora{
   line-height: 1.7em;
   text-align: center;
-  font-size: calc( 15px + (17 - 15) * (100vw - 400px) / (1300 - 400) );
+  font-size: calc( 17px + (19 - 17) * (100vw - 400px) / (1300 - 400) );
   letter-spacing: 0.01em;
   font-family: 'Montserrat', sans-serif;
   margin-top: 5px;
@@ -93,7 +93,7 @@ h1{
 }
 .botoesCartao{
   margin-bottom: 30px;
-
+  justify-items: center;
 }
 footer{
   position: absolute;
@@ -226,5 +226,182 @@ margin-top: 10px;
     float: inherit;
   }
 
+  .botao-wpp {
+    text-decoration: none;
+    color: #eee;
+    display: inline-block;
+    background-color: #25d366;
+    font-weight: bold;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    width: 100px;
+    margin-top: 20px;
+    padding: 1px;
+    text-align: center;
+   margin-bottom: 10px;
+  }
+  .ContWpp{
+    align-content: center;
+    justify-content: end;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 60px;
+    justify-items: center;
+    margin-left: 18px;
+  
+  }
+  .botao-face {
+    text-decoration: none;
+    color: #eee;
+    display: inline-block;
+    background-color: #0249c4;
+    font-weight: bold;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    width: 100px;
+    margin-top: 20px;
+    padding: 15px;
+    text-align: center;
+   margin-bottom: 0px;
+  }
+  .ContFace{
+    align-content: center;
+    justify-content: end;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 60px;
+    justify-items: center;
+    margin-left: 15px;
+  
+  }
+  .botao-email {
+    text-decoration: none;
+    color: #eee;
+    display: inline-block;
+    background-color: #d32539;
+    font-weight: bold;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    width: 100px;
+    margin-top: 20px;
+    padding: 15px;
+    text-align: center;
+   margin-bottom: 0px;
+  }
+  .ContEmail{
+    align-content: center;
+    justify-content: end;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 60px;
+    justify-items: center;
+    margin-left: 23px;
+  
+  }
+  .BtnWpp{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: white;
+   }
+   #Email{
+     margin-left: -45px;
+   }
+   #Face{
+    margin-right: 8px;
+  }
+  #Wpp{
+    margin-right: 6px;
+  }
+}
+.botao-wpp {
+  text-decoration: none;
+  color: #eee;
+  display: inline-block;
+  background-color: #25d366;
+  font-weight: bold;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  width: 200px;
+  margin-top: 20px;
+  padding: 15px;
+  text-align: center;
+ margin-bottom: 10px;
+}
+.ContWpp{
+  align-content: center;
+  justify-content: end;
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 160px;
+  justify-items: center;
+  margin-left: 18px;
 
+}
+.botao-face {
+  text-decoration: none;
+  color: #eee;
+  display: inline-block;
+  background-color: #0249c4;
+  font-weight: bold;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  width: 200px;
+  margin-top: 0px;
+  padding: 15px;
+  text-align: center;
+ margin-bottom: 10px;
+}
+.ContFace{
+  align-content: center;
+  justify-content: end;
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 160px;
+  justify-items: center;
+  margin-left: 15px;
+
+}
+.botao-email {
+  text-decoration: none;
+  color: #eee;
+  display: inline-block;
+  background-color: #d32539;
+  font-weight: bold;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  width: 200px;
+  margin-top: 0px;
+  padding: 15px;
+  text-align: center;
+ margin-bottom: 10px;
+}
+.ContEmail{
+  align-content: center;
+  justify-content: end;
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 160px;
+  justify-items: center;
+  margin-left: 23px;
+
+}
+.BtnWpp{
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  color: white;
+ }
+ #Email{
+   margin-left: -45px;
+ }
+ #Face{
+  margin-right: 8px;
+}
+#Wpp{
+  margin-right: 6px;
 }
