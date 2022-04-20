@@ -5,7 +5,8 @@
       font-weight: bold;
     }
   }
-  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;200&family=Poppins:wght@600&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&family=Poppins:wght@200;300;400;600&display=swap');
+
 
 //   .page {
 //     .page-timeline {
@@ -20,14 +21,7 @@
     line-height: 36px;
     text-align: center;
 }
-.content{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    max-width:  1366px;
-    margin: 0 auto;
-    background-color: rgb(246 243 239);
-    height: 2000px;
-}
+
 
 hr{
     position: relative;
@@ -79,24 +73,36 @@ h2{
     letter-spacing: normal;
 }
 
-@media only screen and (max-device-width: 1366px) {
+@media only screen and(min-device-width: 901px) {
     .parallax {
       background-attachment: scroll;
     }
+    .content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        max-width:  1366px;
+        margin: 0 auto;
+        background-color: rgb(246 243 239);
+        height: 2000px;
+    }
+    .parallax {
+        /* The image used */
+      
+        /* Set a specific height */
+        min-height: 400px;
+      
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .MobileImg{
+        display: none;;
+    }
   }
   
-.parallax {
-    /* The image used */
-  
-    /* Set a specific height */
-    min-height: 400px;
-  
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-}
+
 #Qualidade{
     background-image: url(..\..\..\assets\images\QualidadeImage.jpg);
 }
@@ -109,18 +115,19 @@ h2{
 .TextGrid{
     line-height: 1.7em;
     text-align: center;
-    font-size: 22px;
+    font-size: calc( 17px + (22 - 17) * (100vw - 400px) / (1300 - 400) );
     letter-spacing: 0.01em;
-    padding: 102px;
+    padding: 102px 20px;
     margin-top: -108px;
     font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
 }
 footer{
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
-    background: #111;
+    background: #008437;
     height: auto;
     width: 102%;
     position: inherit;
@@ -147,7 +154,7 @@ footer{
     margin: 15px;
     line-height: 28px;
     font-size: 14px;
-    color: #cacdd2;
+    color: #ffffff;
   }
   .socials{
     list-style: none;
@@ -163,6 +170,7 @@ footer{
     text-decoration: none;
     padding: 5px;
     display: block;
+    color: white;
   
   }
   .socials a i{
@@ -176,11 +184,11 @@ footer{
   
   }
   .socials a:hover i{
-    color: rgb(45, 208, 88);
+    color: rgb(233, 195, 6);
   }
   
   .footer-bottom{
-    background: #000;
+    background: #013912;
     padding: 20px;
     padding-bottom: 40px;
     text-align: center;
@@ -192,7 +200,7 @@ footer{
     text-transform: capitalize;
   }
   .footer-bottom p a{
-  color:#44bae8;
+  color:rgb(233, 195, 6);
   font-size: 16px;
   text-decoration: none;
   }
@@ -217,7 +225,7 @@ footer{
   text-decoration: none;
   }
   .footer-menu ul li a:hover{
-  color: #27bcda;
+  color: rgb(233, 195, 6);
   }
   
   
@@ -233,7 +241,7 @@ footer{
     }
   
   .footer-bottom{
-    background: #000;
+    background: #013912;
     padding: 20px;
     padding-bottom: 40px;
     text-align: center;
@@ -249,4 +257,24 @@ footer{
 
 
   }
+  @media only screen and (max-device-width: 900px) {
 
+    .content{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        max-width: 1366px;
+        margin: 0 auto;
+        background-color: #f6f3ef;
+        text-align: center;
+    }
+    .MobileImg{
+        margin-bottom: -120px;
+        height: 60vw;
+        width: 500px;
+        object-fit: cover;
+        max-width: calc(100% - 20px);
+        border-radius: 23px;
+        box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 13%);
+        margin-top: 15px;
+  }
+}

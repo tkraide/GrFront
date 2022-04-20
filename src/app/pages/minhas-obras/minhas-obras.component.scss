@@ -15,7 +15,7 @@ footer{
     bottom: 0;
     left: 0;
     right: 0;
-    background: #111;
+    background: #008437;
     height: auto;
     width: 102%;
     position: inherit;
@@ -42,7 +42,7 @@ footer{
     margin: 15px;
     line-height: 28px;
     font-size: 14px;
-    color: #cacdd2;
+    color: #ffffff;
   }
   .socials{
     list-style: none;
@@ -58,6 +58,7 @@ footer{
     text-decoration: none;
     padding: 5px;
     display: block;
+    color: white;
   
   }
   .socials a i{
@@ -71,11 +72,11 @@ footer{
   
   }
   .socials a:hover i{
-    color: rgb(45, 208, 88);
+    color: rgb(233, 195, 6);
   }
   
   .footer-bottom{
-    background: #000;
+    background: #013912;
     padding: 20px;
     padding-bottom: 40px;
     text-align: center;
@@ -87,7 +88,7 @@ footer{
     text-transform: capitalize;
   }
   .footer-bottom p a{
-  color:#44bae8;
+  color:rgb(233, 195, 6);
   font-size: 16px;
   text-decoration: none;
   }
@@ -112,7 +113,7 @@ footer{
   text-decoration: none;
   }
   .footer-menu ul li a:hover{
-  color: #27bcda;
+  color: rgb(233, 195, 6);
   }
   
   
@@ -128,7 +129,7 @@ footer{
     }
   
   .footer-bottom{
-    background: #000;
+    background: #013912;
     padding: 20px;
     padding-bottom: 40px;
     text-align: center;
@@ -473,6 +474,7 @@ footer{
             object-fit: cover;
             max-width: calc(100% - 20px);
             border-radius: 23px;
+            box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 13%);
         }
         
         .DivSer{
@@ -484,6 +486,7 @@ footer{
             margin-top: -110px;
             border-radius: 0px 0px 20px 20px;
             max-width: calc(100% - 20px);
+            box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 13%);
         }
         #Serv{
             font-size: 55px;
