@@ -1,31 +1,64 @@
 <div class="page">
   <div class="pageHeader">
-    <h1>Detalhes da Obra</h1>
-  </div>
-  <div>
-    <a [routerLink]="['/page/minhasObras']" class="voltar">Voltar</a>
-  </div>
-  <div class="pageContent">
-    <div class="containerItens">
-      <div class="containerImagem">
-        <img src=".\..\assets\images\mountains.jpg" alt="Everest" class="imagem">
-      </div>
-      <div class="containerTitulo">
-        <label for="titulo">Título</label>
-        <p name="titulo">Monte Everest</p>
-      </div>
-      <div class="containerDescricao">
-        <label for="descricao">Descrição</label>
-        <p name="descricao">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam accumsan erat in varius
-          varius. Pellentesque sed imperdiet libero. Curabitur a ipsum et mauris cursus elementum. Phasellus bibendum
-          tincidunt nisi, non blandit elit. Morbi sit amet velit vitae sapien auctor viverra. In hendrerit malesuada
-          euismod. In non varius tortor. Donec non mauris lacinia, tincidunt tellus sit amet, porta massa. In et diam
-        </p>
-      </div>
-      <div class="containerTipo">
-        <label for="tipo">Tipo</label>
-        <p name="tipo">Fotografia</p>
-      </div>
+    <h1>Gr Business</h1>
+    <div class="botoesCartao">
+      <button mat-button>Quero Conhecer</button>
     </div>
   </div>
+<body>
+  <div class="content">
+
+    <div>
+      <h2>Nossos Serviços</h2>
+      <p class="TextGrid">omos uma Empresa Especializada em fazer a seu Negócio Crescer no Meio Digital, com meios inovadores e funcionais atráves de nossos serviços de Criação de  Sites, Logos e Post, além disso possuimos profissionais experts em aperfeiçoar suas vendas atráves da Otimização do Google Bussiness, Páginas do Facebook e Instagram</p>
+      <div class="botoesCartao">
+        <button mat-button>Quero Conhecer</button>
+      </div>
+    </div>
+    <div class="parallax" id="Serv"></div>
+    <div class="parallax" id="Port"></div>
+    <div>
+      <h2>Nosso Portfólio</h2>
+      <p class="TextGrid">A Gr Business tem estudado e aprimorado durante anos seu sistema de Consulta de Otimização de Motores de Busca do Google, sendo atualmente pioneira nessa área, com dados mostrando um ótimo resultado nas Vendas e Prestação de Serviços de Nossos Clientes, como Grandes Construtoras, Empresas de Jogos Digitais e Micro Empreendedores Locais</p>
+      <div class="botoesCartao">
+        <button mat-button>Conheça nossa Trajetória</button>
+      </div>
+    </div>
+  
+  </div>
+
+  <div class="content2">
+  <div class="parallax" id="SobreN">
+   <p class="TextSobre"> <a>Sobre Nós</a></p>
+  </div>
+  <div class="parallax" id="Proced">
+    <p class="TextProced"><a>Conheça nossos Procedimentos </a></p>
+   </div>
 </div>
+</body>
+</div>
+<footer>
+  <div class="footer-content">
+      <h3>Gr Business</h3>
+      <p>Somos uma Empresa com mais de 3 anos de Experiência no Mercado Digital sendo especialsta em Marketing Digital, Otimização de Motores de Busca do Google, Design de Logotipos e Sites e Programação de Sites</p>
+      <ul class="socials">
+       <li><a href="#"><img  class="ImagesF" src=".\..\assets\images\BtnWpp.png" ><i class="iMenu">Whatsapp</i></a></li>
+          <li><a href="#"><img class="ImagesF" src=".\..\assets\images\BtnFace.png"><i class="iMenu">Facebook</i></a></li>
+          <li><a href="#"><img class="ImagesF" src=".\..\assets\images\BtnInsta.png"><i class="iMenu">Instagram</i></a></li>
+         <li><a href="#"> <img class="ImagesF" src=".\..\assets\images\BtnEmail.png"><i class="iMenu">Email</i></a></li>
+      </ul>
+  </div>
+  <div class="footer-bottom">
+      <p>copyright &copy; <a href="#">Gr Business</a>  </p>
+              <div class="footer-menu">
+                <ul class="f-menu">
+                  <li><a [routerLink]="['/page/home']" routerLinkActive="active">Home</a></li>
+                  <li><a [routerLink]="['/page/servicos']" routerLinkActive="active">Serviços</a></li>
+                  <li><a [routerLink]="['/page/portfolio']" routerLinkActive="active">Portfólio</a></li>
+                  <li><a [routerLink]="['/page/processo']" routerLinkActive="active">Processo</a></li>
+                  <li><a [routerLink]="['/page/contato']" routerLinkActive="active">Contato</a></li>
+                </ul>
+              </div>
+  </div>
+
+</footer>

@@ -301,8 +301,8 @@ margin-top: 10px;
     width: 60px;
     justify-items: center;
     margin-left: 23px;
-  
   }
+  
   .BtnWpp{
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
@@ -407,3 +407,25 @@ margin-top: 10px;
 #Wpp{
   margin-right: 6px;
 }
+.botao-wpp:hover {
+  background-color: darken(#25d366, 5%);
+}
+
+.botao-wpp:focus {
+  background-color: darken(#25d366, 15%);
+}
+
+.botao-face:hover {
+  background-color: darken(#0249c4, 5%);
+}
+
+.botao-face:focus {
+  background-color: darken(#0249c4, 15%);
+}  
+.botao-email:hover {
+  background-color: darken(#d32539, 5%);
+}
+
+.botao-email:focus {
+  background-color: darken(#d32539, 15%);
+}  
