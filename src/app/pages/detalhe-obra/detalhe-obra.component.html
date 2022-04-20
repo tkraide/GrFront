@@ -1,42 +1,46 @@
 <div class="page">
-  <div class="pageHeader">
-    <h1>Gr Business</h1>
-    <div class="botoesCartao">
-      <button mat-button>Quero Conhecer</button>
+  <div class="ImageHome">
+    <div class="pageHeader"> 
+      <h1 id="GR">GR BUSINESS</h1>
+      <div class="BtnQuero">
+        <a [routerLink]="['/page/servicos']" routerLinkActive="active" id="BtnQ">QUERO CONHECER</a>
+      </div>
     </div>
   </div>
 <body>
   <div class="content">
 
     <div>
-      <h2>Nossos Serviços</h2>
+      <img mat-card-image src=".\..\assets\images\QualidadeImage.jpg" class="MobileImg">
+      <h2 class="H2C">Nossos Serviços</h2>
       <p class="TextGrid">omos uma Empresa Especializada em fazer a seu Negócio Crescer no Meio Digital, com meios inovadores e funcionais atráves de nossos serviços de Criação de  Sites, Logos e Post, além disso possuimos profissionais experts em aperfeiçoar suas vendas atráves da Otimização do Google Bussiness, Páginas do Facebook e Instagram</p>
-      <div class="botoesCartao">
-        <button mat-button>Quero Conhecer</button>
+      <div class="BtnContent">
+        <a [routerLink]="['/page/servicos']" routerLinkActive="active" id="BtnC">QUERO CONHECER<mat-icon>keyboard_arrow_right</mat-icon></a>
       </div>
     </div>
     <div class="parallax" id="Serv"></div>
+    <img mat-card-image src=".\..\assets\images\QualidadeImage.jpg" class="MobileImg">
+
     <div class="parallax" id="Port"></div>
     <div>
-      <h2>Nosso Portfólio</h2>
+      <img mat-card-image src=".\..\assets\images\QualidadeImage.jpg" class="MobileImg">
+      <h2 class="H2C">Nosso Portfólio</h2>
       <p class="TextGrid">A Gr Business tem estudado e aprimorado durante anos seu sistema de Consulta de Otimização de Motores de Busca do Google, sendo atualmente pioneira nessa área, com dados mostrando um ótimo resultado nas Vendas e Prestação de Serviços de Nossos Clientes, como Grandes Construtoras, Empresas de Jogos Digitais e Micro Empreendedores Locais</p>
-      <div class="botoesCartao">
-        <button mat-button>Conheça nossa Trajetória</button>
+      <div class="BtnContent">
+        <a [routerLink]="['/page/servicos']" routerLinkActive="active" id="BtnC">NOSSA TRAJETÓRIA<mat-icon>keyboard_arrow_right</mat-icon></a>
       </div>
     </div>
-  
-  </div>
 
-  <div class="content2">
-  <div class="parallax" id="SobreN">
-   <p class="TextSobre"> <a>Sobre Nós</a></p>
   </div>
-  <div class="parallax" id="Proced">
-    <p class="TextProced"><a>Conheça nossos Procedimentos </a></p>
-   </div>
-</div>
+  <!-- <div class="content2">
+    <div class="parallax" id="SobreN">
+      <a class="TextSobre">Sobre Nós</a>
+    </div>
+    <div class="parallax" id="Proced">
+      <a class="TextProced">Conheça nossos Procedimentos </a>
+    </div>
+  </div> -->
 </body>
-</div>
 <footer>
   <div class="footer-content">
       <h3>Gr Business</h3>

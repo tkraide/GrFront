@@ -6,7 +6,7 @@
     }
   }
   
-  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;200&family=Poppins:wght@600&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&family=Poppins:wght@200;300;400;600&display=swap');
   
   
   //   .page {
@@ -15,12 +15,109 @@
   //     }
   //   }
   .pageHeader{ 
-    padding: 10px 20px;
-    position: relative;
-    line-height: 36px;
+    background-image:url(..\..\..\assets\images\dot.png);
+    background-size: auto;
+    background-repeat: repeat;
+    background-position: center center;
+    margin-left: -20px;
+    width: 103.35vw;
+    height: 900px;
+    margin-top: -25px;
     text-align: center;
-    background-image: url(..\..\..\assets\images\Imagem1.png);
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    display: grid;
+}
+.BtnQuero{
+    background-color: #ffffff00;
+    border: solid 2px #cacacaf7;
+    cursor: pointer !important;
+    color: white;
+    padding: 12px;
+    margin-top: 15px;
+
+    
+}
+.BtnContent{
+    color: white;
+    padding: 12px;
+    margin-top: 15px;
+    text-align: center;
+    margin-top: -60px;
+    margin-bottom: 60px;
+
+}
+.mat-icon{
+margin-top: -2px;
+}
+#BtnC{
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+    padding: 30px;
+    color: #eee;
+    font-weight: 500;
+    background-color: #14ba41;
+    border-radius: 50px;
+    display: inline-flex;
+}
+#BtnC:hover {
+    color:  #008437;
+    background-color: #e1e1e1;
   }
+  
+#BtnC:focus {
+    color:  #008437;
+    background-color: #e1e1e1;
+  } 
+
+#BtnQ{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 19px;
+    text-decoration: none;
+    padding: 15px;
+    color: #eee;
+    font-weight: 500;
+   
+
+}
+.BtnQuero:hover {
+    background-color: white;
+  }
+  
+.BtnQuero:focus {
+    background-color: darken(white, 5%);
+  }  
+#BtnQ:hover {
+    color:  #008437;
+  }
+  
+#BtnQ:focus {
+    color:  #008437;
+  } 
+
+  
+#GR{
+    margin-top: -100px;
+    margin-bottom: 40px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 60px;
+    text-shadow: 6px 1px #0b0b0beb;
+    padding: 10px;
+
+}
+.ImageHome{
+    background-image: url(..\..\..\assets\images\Imagem1.png);
+    margin-left: -20px;
+    width: 102.35vw;
+    height: 900px;
+    margin-top: -25px;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
   .content{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -28,6 +125,7 @@
     margin: 0 auto;
     background-color: rgb(246 243 239);
     height: 2000px;
+    margin-top: 75px;
   }
   .content2{
     display: grid;
@@ -51,7 +149,7 @@
     text-align: center;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
-    margin-top: 179px;
+    margin-top: 60px;
     font-size: 32px;
     margin-bottom: 35px;
   }
@@ -251,5 +349,59 @@
     }
   
   
+  }
+  @media only screen and (max-device-width: 900px) {
+
+    .content{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        max-width: 1366px;
+        margin: 0 auto;
+        background-color: #f6f3ef;
+        text-align: center;
+        margin-top:40px;
+    }
+    .MobileImg{
+        margin-bottom: -120px;
+        height: 60vw;
+        width: 500px;
+        object-fit: cover;
+        max-width: calc(100% - 20px);
+        border-radius: 23px;
+        box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 13%);
+        margin-top: 15px;
+  }
+  .parallax{
+      display: none;
+  }
+}
+  @media only screen and(min-device-width: 901px) {
+    .parallax {
+      background-attachment: scroll;
+    }
+    .content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        max-width:  1366px;
+        margin: 0 auto;
+        background-color: rgb(246 243 239);
+        height: 1500px;
+        margin-top: 70px;
+    }
+    .parallax {
+        /* The image used */
+      
+        /* Set a specific height */
+        min-height: 400px;
+      
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .MobileImg{
+        display: none;;
+    }
   }
   
