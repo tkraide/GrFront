@@ -2,19 +2,64 @@
   
     text-align: center;
 }
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;200&family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&family=Poppins:wght@200;300;400;600&display=swap');
+@media only screen and (min-width:1300px) {
+  .content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 auto;
+    text-align: center;
+    justify-items: center;
 
-.content{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  margin: 0 auto;
-  text-align: center;
-  width: 1300px
-
+  }
+  #imagemSobre{
+    width: 350px;
+    height: 200px;
+    margin-top: 30px;
+    box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 13%);
+    border-radius: 3px;
+    object-fit: cover;
+  }
 }
+@media only screen and (max-width:1299px) and (min-width:800px) {
+  .content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 auto;
+    text-align: center;
+    justify-items: center;
 
+  }
+  #imagemSobre{
+    width: 350px;
+    height: 200px;
+    margin-top: 30px;
+    box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 13%);
+    border-radius: 3px;
+    object-fit: cover;
+  }
+}
+@media only screen and (max-width:799px){
+  .content{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 0 auto;
+    text-align: center;
+    justify-items: center;
+
+  }
+  #imagemSobre{
+    width: 340px;
+    height: 200px;
+    margin-top: 30px;
+    box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 13%);
+    border-radius: 3px;
+    margin-left: -10px;
+    object-fit: cover;
+  }
+}
 .bPort{
-  color: #049f30;
+  color: #12a944;
 
 
 
@@ -34,29 +79,24 @@ h1{
   margin-bottom: 20px;
 }
 
-#imagemSobre{
-  width: 350px;
-  height: 200px;
-  margin-top: 30px;
-  box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 13%);
-  border-radius: 3px;
-}
+
 .pDesc{
   margin-top: 10px;
   margin-bottom: 5px;
-  color: #004026;
+  color: #2a2a2a;
   font-size:15px;
   font-family: 'Poppins', sans-serif;
+  font-weight: 400px;
 }
 .h2Port{
   margin-bottom: 8px;
-  color: #0e6709;
+  color: #03963d;
   font-size: 24px;
   font-family: 'Poppins', sans-serif;
 }
 
 .pTipo{
-  color: #00ab43;
+  color: #0061d1;
   font-size: 18px;
   font-weight: 700;
   font-family: 'Poppins', sans-serif;
@@ -69,7 +109,7 @@ footer{
   right: 0;
   background: #008437;
   height: auto;
-  width: 102%;
+  width: 99.35vw;
   position: inherit;
   margin-top: 100px;
   padding-top: 40px;
