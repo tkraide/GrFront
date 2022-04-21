@@ -13,14 +13,7 @@
 //       width: 100%;
 //     }
 //   }
-.pageHeader{ 
-    border-bottom: 1px solid #e0e0e0;
-    background-color: #fdfdfd;
-    padding: 10px 20px;
-    position: relative;
-    line-height: 36px;
-    text-align: center;
-}
+
 
 
 hr{
@@ -76,6 +69,15 @@ h2{
 @media only screen and(min-device-width: 901px) {
     .parallax {
       background-attachment: scroll;
+    }
+    .pageHeader{ 
+        border-bottom: 1px solid #e0e0e0;
+        background-color: #fdfdfd;
+        padding: 10px 20px;
+        position: relative;
+        line-height: 36px;
+        text-align: center;
+        font-size: 42px;
     }
     .content{
         display: grid;
@@ -254,7 +256,14 @@ footer{
       text-transform: capitalize;
       float: inherit;
     }
-
+    .pageHeader{ 
+        border-bottom: 1px solid #e0e0e0;
+        background-color: #fdfdfd;
+        padding: 10px 20px;
+        position: relative;
+        line-height: 36px;
+        text-align: center;
+    }
 
   }
   @media only screen and (max-device-width: 900px) {
