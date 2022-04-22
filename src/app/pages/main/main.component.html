@@ -1,37 +1,39 @@
-<mat-toolbar  class="mat-toolbar">
-<div class="content123">
-  <div id="logo">
-  <span ><img src="/assets/grbusiness.svg" alt="" srcset="" /></span>
-</div>
-<div class="Header">
-  <a [routerLink]="['/page/home']" routerLinkActive="active" mat-icon-button class="menu-item">
-    <mat-icon>home</mat-icon>
-    <span>Home</span>
-  </a>
-  <a [routerLink]="['/page/servicos']" routerLinkActive="active" mat-icon-button class="menu-item">
-    <mat-icon>assessment</mat-icon>
-    <span>Serviços</span>
-  </a>
-  <a [routerLink]="['/page/portfolio']" routerLinkActive="active" mat-icon-button class="menu-item">
-    <mat-icon>assignment</mat-icon>
-    <span>Portfólio</span>
-  </a>
-  <a [routerLink]="['/page/processo']" routerLinkActive="active" mat-icon-button class="menu-item">
-    <mat-icon>computer</mat-icon>
-    <span>Processo</span>
-  </a>
-  <a [routerLink]="['/page/contato']" routerLinkActive="active" mat-icon-button class="menu-item">
-    <mat-icon>contact_mail</mat-icon>
-    <span>Contato</span>
-  </a>
-</div>
-</div>
- 
- 
-</mat-toolbar>
-<!-- <div class="disposicaoPagina"> -->
+  <header class="header">
+    <!-- Logo -->
+    <div id="logo">
+    <span ><img src="/assets/grbusiness.svg" alt="" srcset="" /></span>
+    </div>
+
+    <!-- Hamburger icon -->
+    <input class="side-menu" type="checkbox" id="side-menu"/>
+    <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+
+    <!-- Menu -->
+    <nav class="nav">
+        <ul class="menu">
+            <li> <a [routerLink]="['/page/home']" routerLinkActive="active" mat-icon-button class="menu-item">
+              <mat-icon [inline]="true">home</mat-icon>
+              <span class="Span">Home</span>
+            </a></li>
+            <li> <a [routerLink]="['/page/servicos']" routerLinkActive="active" mat-icon-button class="menu-item">
+              <mat-icon [inline]="true">assessment</mat-icon>
+              <span  class="Span">Serviços</span>
+            </a></li>
+            <li> <a [routerLink]="['/page/portfolio']" routerLinkActive="active" mat-icon-button class="menu-item">
+              <mat-icon [inline]="true">assignment</mat-icon>
+              <span  class="Span">Portfólio</span>
+            </a></li>
+            <li>  <a [routerLink]="['/page/processo']" routerLinkActive="active" mat-icon-button class="menu-item">
+              <mat-icon [inline]="true">computer</mat-icon>
+              <span  class="Span">Processo</span>
+            </a></li>
+            <li> <a [routerLink]="['/page/contato']" routerLinkActive="active" mat-icon-button class="menu-item">
+              <mat-icon [inline]="true">contact_mail</mat-icon>
+              <span  class="Span">Contato</span>
+            </a></li>
+        </ul>
+    </nav>
+</header>
 <div class="main-content">
   <router-outlet></router-outlet>
 </div>
-  
-<!-- </div> -->
