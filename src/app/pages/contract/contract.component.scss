@@ -25,18 +25,19 @@ h1{
     grid-gap: 40px;
   
   }
-}
 
-#Contato{
-  font-family:'Poppins', sans-serif;
-  line-height: 1.3em;
-  text-align: center;
-  font-size: calc( 26px + (36 - 26) * (100vw - 400px) / (1300 - 400) );
-  font-weight: 700;
-  margin-bottom: 30px;
-  margin-top: 20px;
-  letter-spacing: 0.15em;
-  max-width: calc(100% - 20px);
+  #Contato{
+    font-family:'Poppins', sans-serif;
+    line-height: 1.3em;
+    text-align: center;
+    font-size: calc( 26px + (36 - 26) * (100vw - 400px) / (1300 - 400) );
+    font-weight: 700;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    letter-spacing: 0.15em;
+    max-width: calc(100% - 20px);}
+
+
 }
 #Atendimento{
   font-family: 'Poppins', sans-serif;
@@ -74,10 +75,22 @@ h1{
   margin: 0 auto;
   margin-bottom: 50px;
 }
+#Contato{
+  font-family:'Poppins', sans-serif;
+  line-height: 1.3em;
+  text-align: center;
+  font-size: calc( 29px + (36 - 26) * (100vw - 400px) / (1300 - 400) );
+  font-weight: 700;
+  margin-bottom: 30px;
+  margin-top: -25px;
+  letter-spacing: 0.15em;
+  max-width: calc(100% - 20px);}
+
 
 }
 .Back{
   background-color: rgb(246,243,239);
+  border-radius: 10px;
 
 }
 #ContatoDiv{
