@@ -27,11 +27,11 @@ const routes: Routes = [
     runGuardsAndResolvers: 'always',
     children: [
       {
-        path: 'home',
+        path: 'homes',
         loadChildren: () => HomeModule,
       },
       {
-        path: 'partner',
+        path: 'portfolio',
         loadChildren: () => PartnerModule,
       },
       {
@@ -43,7 +43,7 @@ const routes: Routes = [
         loadChildren: () => PartnerFormModule,
       },
       {
-        path: 'contract',
+        path: 'contato',
         loadChildren: () => ContractModule,
       },
       {
@@ -55,7 +55,7 @@ const routes: Routes = [
         loadChildren: () => ContractFormModule,
       },
       {
-        path: 'cadastro',
+        path: 'processo',
         loadChildren: () => CadastroModule,
       },
       {
@@ -63,7 +63,7 @@ const routes: Routes = [
         loadChildren: () => RecSenhaModule,
       },
       {
-        path: 'minhasObras',
+        path: 'servicos',
         loadChildren: () => MinhasObrasModule,
       },
       {
@@ -71,7 +71,7 @@ const routes: Routes = [
         loadChildren: () => RegistrarObraModule,
       },
       {
-        path: 'detalheObra',
+        path: 'home',
         loadChildren: () => DetalheObraModule,
       },      
     ],

@@ -1,31 +1,97 @@
-<mat-toolbar color="primary">
-    <span>Minhas Obras</span>
-    <button mat-button (click)="toggleGridColumns()" fxHide.lt-md>
-        <span *ngIf="gridColumns === 5">Quatro Colunas</span>
-        <span *ngIf="gridColumns === 4">Cinco Colunas</span>
-    </button>
-</mat-toolbar>
-<div class="divNovaObra">
-    <a [routerLink]="['/page/registrarObra']" class="novaObra">Registrar nova Obra</a>
-</div>
-<div class="content">
-    <div fxLayout="row wrap" fxLayoutGap="16px grid">
-        <div [fxFlex]="(100/gridColumns) + '%'" fxFlex.xs="100%" fxFlex.sm="33%" *ngFor="let num of [1,2,3,4,5,6]">
-            <mat-card class="mat-elevation-z4">
-                <mat-card-header>
-                    <mat-card-title>Título {{num}}</mat-card-title>
-                </mat-card-header>
-                <img mat-card-image src=".\..\assets\images\mountains.jpg" class="imagemCard">
-                <mat-card-content>
-                    <p>Descrição da obra</p>
-                </mat-card-content>
-                <mat-card-actions>
-                    <div class="botoesCartao">
-                        <button mat-button>Certificado</button>
-                        <button mat-button [routerLink]="['/page/detalheObra']">Detalhes</button>
-                    </div>
-                </mat-card-actions>
-            </mat-card>
+<div class="page">
+    <div class="DivHeader">
+        <img mat-card-image src=".\..\assets\images\ServImage.jpg" id="SobreImg">
+        <div class="DivSer">
+         <h1 id="Serv">Serviços</h1>
+         <br>
+        <p class="pServico">Site Profissional para Empresas personalizado para seu Negócio.<br>
+        Logotipo com Design Profissional e de Qualidade para fazer sua Empresa se destacar.<br>  
+        Personalizamos o seu Google Business gerando mais Interesse para o seu Público Digital.<br>
+        Criação de Post e Otimização de Páginas para o Facebook e o Instagram com Métodos que Geram mais Engajamento e Visualização</p>
+        <br><br>
         </div>
     </div>
-</div>
+  
+    <div class="content">
+        <div>
+            <h2 class="h2Content">Criação de Site Profissional</h2>
+            <hr class="hrContent">
+            <img mat-card-image src=".\..\assets\images\Site.jpg" id="imagemSobre">
+            <p class="TextGrid">Nos desenvolvemos <b>Sites</b> seguindo todas as <b>Diretrizes</b> e <b>Critérios</b> impostos pelo <b>Google</b>, gerando um melhor <b>Ranqueamento do Google</b> para seu <b>Negócio</b>, além de ser Totalmente <b>Responsivo</b> e <b>100% Personalizado</b> com <b>Layouts Exclusivos</b> para sua <b>Empresa</b>. Com uma aparência <b>Bonita</b> e <b>Moderna</b> é o que irá transmitir <b>Confiança a Seus Visitantes</b>.</p>
+            <a href="whatsapp://send?text=Link pra um artigo ó https://google.com" class="botao-wpp">
+                <div class="ContWpp">
+                <!-- ícone -->
+                    <img  class="ImagesF" src=".\..\assets\images\BtnWpp.png" >
+                     <i class="BtnWpp">Whatsapp</i>
+                </div>
+            </a>
+        </div>
+        <div>
+            <h2 class="h2Content">Criação de Logotipo Profissional</h2>
+            <hr class="hrContent">
+            <img mat-card-image src=".\..\assets\images\Logo.jpg" id="imagemSobre">
+            <p class="TextGrid">Nossos <b>Logotipo</b> possuem um <b>Design Especial</b> e de <b>Qualidade</b> para fazer seu <b>Negócio</b> se <b>Destacar entre seus Concorrentes</b>.Podendo ter sua <b>Marca de Sucesso</b> em até <b>48 horas</b>.</p>
+            <a href="whatsapp://send?text=Link pra um artigo ó https://google.com" class="botao-wpp" id="Wpp2">
+                <div class="ContWpp">
+                    <!-- ícone -->
+                        <img  class="ImagesF" src=".\..\assets\images\BtnWpp.png" >
+                         <i class="BtnWpp">Whatsapp</i>
+                </div>
+            </a>
+            
+        </div>
+        <div>
+            <h2 class="h2Content">Otimização do Google Business</h2>
+            <hr class="hrContent">
+            <img mat-card-image src=".\..\assets\images\Google.png" id="imagemSobre">
+            <p class="TextGrid">Somos <b>Consultor de Otimização de Motores de Busca do Google</b>, Realizamos <b>Procedimentos</b> Para <b>Melhorar</b> a <b>Visibilidade</b> do seu <b>Negócio na Internet</b>.Atráves do <b>Google Business</b> Aperfeiçoamos a <b>Quantidade de Informações</b> e <b>Ranqueamento</b> da Sua <b>Empresa no Google</b>.</p>
+            <a href="whatsapp://send?text=Link pra um artigo ó https://google.com" class="botao-wpp" id="Wpp3">
+                <div class="ContWpp">
+                    <!-- ícone -->
+                        <img  class="ImagesF" src=".\..\assets\images\BtnWpp.png" >
+                         <i class="BtnWpp">Whatsapp</i>
+                </div>     
+            </a>
+        </div>
+        <div>
+            <h2 class="h2Content">Post para Facebook e Instagram</h2>
+            <hr class="hrContent">
+            <img mat-card-image src=".\..\assets\images\FaceInsta.jpg" id="imagemSobre">
+            <p class="TextGrid">Uma das <b>Especialidades</b> da <b>Gr Business</b> é o <b>Marketing Digital</b>, fazemos <b>Post</b> e <b>Gerenciamos Páginas</b> utilizando <b>Métodos Revolucionários</b> que geram <b>Mais Engajamento</b> e <b>Visualização</b> para suas <b>Páginas</b> e <b>Post</b> no <b>Facebook</b> e <b>Instagram</b>.</p>
+            <a href="whatsapp://send?text=Link pra um artigo ó https://google.com" class="botao-wpp"  id="Wpp4">
+                <div class="ContWpp">
+                    <!-- ícone -->
+                        <img  class="ImagesF" src=".\..\assets\images\BtnWpp.png" >
+                         <i class="BtnWpp">Whatsapp</i>
+                </div>         
+            </a>
+        </div>     
+    </div>
+             
+    <footer>
+        <div class="footer-content">
+            <h3>Gr Business</h3>
+            <p>Somos uma Empresa com mais de 3 anos de Experiência no Mercado Digital sendo especialsta em Marketing Digital, Otimização de Motores de Busca do Google, Design de Logotipos e Sites e Programação de Sites</p>
+            <ul class="socials">
+             <li><a href="#"><img  class="ImagesF" src=".\..\assets\images\BtnWpp.png" ><i class="iMenu">Whatsapp</i></a></li>
+                <li><a href="#"><img class="ImagesF" src=".\..\assets\images\BtnFace.png"><i class="iMenu">Facebook</i></a></li>
+                <li><a href="#"><img class="ImagesF" src=".\..\assets\images\BtnInsta.png"><i class="iMenu">Instagram</i></a></li>
+               <li><a href="#"> <img class="ImagesF" src=".\..\assets\images\BtnEmail.png"><i class="iMenu">Email</i></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>copyright &copy; <a href="#">Gr Business</a>  </p>
+                    <div class="footer-menu">
+                      <ul class="f-menu">
+                        <li><a [routerLink]="['/page/home']" routerLinkActive="active">Home</a></li>
+                        <li><a [routerLink]="['/page/servicos']" routerLinkActive="active">Serviços</a></li>
+                        <li><a [routerLink]="['/page/portfolio']" routerLinkActive="active">Portfólio</a></li>
+                        <li><a [routerLink]="['/page/processo']" routerLinkActive="active">Processo</a></li>
+                        <li><a [routerLink]="['/page/contato']" routerLinkActive="active">Contato</a></li>
+                      </ul>
+                    </div>
+        </div>
+    
+    </footer>
+  </div>
+  

@@ -21,10 +21,10 @@ export class MinhasObrasComponent implements OnInit {
 
   title = 'Card View Demo';
 
-  gridColumns = 4;
+  gridColumns = 2;
 
   toggleGridColumns() {
-    this.gridColumns = this.gridColumns === 4 ? 5 : 4;
+    this.gridColumns = this.gridColumns === 2 ? 3 : 2;
   }
 
 }
