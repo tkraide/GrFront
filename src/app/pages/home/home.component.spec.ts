@@ -1,24 +1,17 @@
-import { waitForAsync, ComponentFixture, TestBed } from '@angular/core/testing';
-import { HttpClientTestingModule } from '@angular/common/http/testing';
+import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CoreModule } from '@core';
-import { SharedModule } from '@shared';
 import { HomeComponent } from './home.component';
-import { QuoteService } from '@app/services/quote.service';
 
-describe('HomeComponent', () => {
+describe('CadastroComponent', () => {
   let component: HomeComponent;
   let fixture: ComponentFixture<HomeComponent>;
 
-  beforeEach(
-    waitForAsync(() => {
-      TestBed.configureTestingModule({
-        imports: [CoreModule, SharedModule, HttpClientTestingModule],
-        declarations: [HomeComponent],
-        providers: [QuoteService],
-      }).compileComponents();
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
+      declarations: [ HomeComponent ]
     })
-  );
+    .compileComponents();
+  });
 
   beforeEach(() => {
     fixture = TestBed.createComponent(HomeComponent);

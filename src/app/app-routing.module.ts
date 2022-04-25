@@ -1,81 +1,56 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { GuardService } from './@shared/services/guard/guard.service';
-import { ContractFormModule } from './pages/contract-form/contract-form.module';
-import { ContractModule } from './pages/contract/contract.module';
+import { ContatoModule } from './pages/contato/contato.module';
 import { HomeModule } from './pages/home/home.module';
-import { LoginModule } from './pages/login/login.module';
 import { MainComponent } from './pages/main/main.component';
-import { PartnerFormModule } from './pages/partner-form/partner-formmodule';
-import { PartnerModule } from './pages/partner/partner.module';
-import { CadastroModule } from './pages/cadastro/cadastro.module';
-import { RecSenhaModule } from './pages/rec-senha/rec-senha.module';
-import { MinhasObrasModule } from './pages/minhas-obras/minhas-obras.module';
-import { RegistrarObraModule } from './pages/registrar-obra/registrar-obra.module';
-import { DetalheObraModule } from './pages/detalhe-obra/detalhe-obra.module';
-
+import { PortfolioModule } from './pages/portfolio/portfolio.module';
+import { ProcessoModule } from './pages/processo/processo.module';
+import { ServicosModule } from './pages/servicos/servicos.module';
 
 const routes: Routes = [
   {
     path: '',
-    loadChildren: () => LoginModule,
-  },
-  {
-    path: 'page',
     component: MainComponent,
     canActivateChild: [GuardService],
     runGuardsAndResolvers: 'always',
-    children: [
-      {
-        path: 'homes',
-        loadChildren: () => HomeModule,
-      },
-      {
-        path: 'portfolio',
-        loadChildren: () => PartnerModule,
-      },
-      {
-        path: 'partner/new',
-        loadChildren: () => PartnerFormModule,
-      },
-      {
-        path: 'partner/edit/:id',
-        loadChildren: () => PartnerFormModule,
-      },
-      {
-        path: 'contato',
-        loadChildren: () => ContractModule,
-      },
-      {
-        path: 'contract/new',
-        loadChildren: () => ContractFormModule,
-      },
-      {
-        path: 'contract/update/:id',
-        loadChildren: () => ContractFormModule,
-      },
-      {
-        path: 'processo',
-        loadChildren: () => CadastroModule,
-      },
-      {
-        path: 'recuperarSenha',
-        loadChildren: () => RecSenhaModule,
-      },
-      {
-        path: 'servicos',
-        loadChildren: () => MinhasObrasModule,
-      },
-      {
-        path: 'registrarObra',
-        loadChildren: () => RegistrarObraModule,
-      },
-      {
-        path: 'home',
-        loadChildren: () => DetalheObraModule,
-      },      
-    ],
+    loadChildren: () => HomeModule,
   },
+  {
+    path: 'home',
+    component: MainComponent,
+    canActivateChild: [GuardService],
+    runGuardsAndResolvers: 'always',
+    loadChildren: () => HomeModule,
+  },
+  {
+    path: 'portfolio',
+    component: MainComponent,
+    canActivateChild: [GuardService],
+    runGuardsAndResolvers: 'always',
+    loadChildren: () => PortfolioModule,
+  },
+  {
+    path: 'contato',
+    component: MainComponent,
+    canActivateChild: [GuardService],
+    runGuardsAndResolvers: 'always',
+    loadChildren: () => ContatoModule,
+  },
+  {
+    path: 'processo',
+    component: MainComponent,
+    canActivateChild: [GuardService],
+    runGuardsAndResolvers: 'always',
+    loadChildren: () => ProcessoModule,
+  },
+  {
+    path: 'servicos',
+    component: MainComponent,
+    canActivateChild: [GuardService],
+    runGuardsAndResolvers: 'always',
+    loadChildren: () => ServicosModule,
+  }
 ];
 
 @NgModule({
