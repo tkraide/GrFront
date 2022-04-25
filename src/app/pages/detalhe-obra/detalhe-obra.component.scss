@@ -121,16 +121,10 @@ b{
     background-size: contain;
   }
   #Serv{
-    background-image: url(..\..\..\assets\images\Imagem2.png);
-  }
-  #SobreN{
-    background-image: url(..\..\..\assets\images\QualidadeImage.jpg);
-  }
-  #Proced{
-    background-image: url(..\..\..\assets\images\QualidadeImage.jpg);
+    background-image: url(..\..\..\assets\images\ServHome.jpg);
   }
   #Port{
-    background-image: url(..\..\..\assets\images\Imagem3.png);
+    background-image: url(..\..\..\assets\images\PortHome.png);
   }
   
   
@@ -391,7 +385,7 @@ b{
         justify-items: center;
   }
   .MobileImg2{
-    background-image: url(..\..\..\assets\images\QualidadeImage.jpg);
+    background-image: url(..\..\..\assets\images\SobreNHome.jpg);
     height: 60vw;
     width: 90vw;
     object-fit: cover;
@@ -422,7 +416,7 @@ b{
 }
 
 .MobileImg3{
-    background-image: url(..\..\..\assets\images\QualidadeImage.jpg);
+    background-image: url(..\..\..\assets\images\Procedimentos.jpg);
     height: 60vw;
     width: 90vw;
     object-fit: cover;
@@ -585,7 +579,7 @@ b{
         text-align: center;
       }
       .MobileImg2{
-        background-image: url(..\..\..\assets\images\QualidadeImage.jpg);
+        background-image: url(..\..\..\assets\images\SobreNHome.jpg);
         height: 400px;
         width: 600px;
         object-fit: cover;
@@ -597,7 +591,7 @@ b{
         display: grid;
   }
   .MobileImg3{
-    background-image: url(..\..\..\assets\images\QualidadeImage.jpg);
+    background-image: url(..\..\..\assets\images\Procedimentos.jpg);
     height: 400px;
     width: 600px;
     object-fit: cover;
@@ -614,8 +608,9 @@ b{
     padding: 15px;
     color: white;
     font-weight: bold;
-    margin-top: 283px;
+    margin-top: 320px;
     text-decoration: underline;
+    background-color: #0cbb46;
     }
     .LinkS2{
     font-family: "Montserrat", sans-serif;
@@ -623,8 +618,9 @@ b{
     padding: 15px;
     color: white;
     font-weight: bold;
-    margin-top: 283px;
+    margin-top: 320px;
     text-decoration: underline;
+    background-color: #0cbb46;
     }
     .LinkS2:hover {
         color:  #056e26;
