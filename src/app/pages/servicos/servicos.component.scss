@@ -39,7 +39,7 @@ footer{
     line-height: 3rem;
   }
   .footer-content p{
-    max-width: 500px;
+    max-width: 520px;
     margin: 15px;
     line-height: 28px;
     font-size: 14px;
@@ -184,11 +184,14 @@ footer{
         justify-items: center;
         
     }
+    #Wpp{
+      margin-top: 41.3px;
+    }
     #Wpp2{
-        margin-top: 135px;
+        margin-top: 70px;
     }
     #Wpp3{
-        margin-top: 49px;
+        margin-top: 41.3px;
     }
     .TextGrid{
         font-size: 16px;
@@ -228,23 +231,24 @@ footer{
         margin-bottom: -11px;
         margin-top: 10px;
     }
+    .DivHeader{
+      display: grid;
+      grid-template-columns: repeat(2, 0fr);
+      grid-auto-columns: 30% 70%;
+      width: 80vw;
+      margin: auto;
+    }
     #SobreImg{
-        width: 60%;
-        height: 400px;
+        width: 350px;
+        height: 350px;
         object-fit: cover;
-        object-position: 50% 50%;
-        //margin-top: 80px;
-        margin-left: 90px;
     }
     
     .DivSer{
-        width: 55%;
+        width: 56vw;
         height: 350px;
         background-color: white;
         display: flex;
-        position: absolute;
-        margin-left: 550px;
-        margin-top: -340px;
     }
     #Serv{
         margin-left: 50px;
@@ -254,7 +258,7 @@ footer{
     .pServico{
         font-size: 16px;
         font-family: 'Montserrat', sans-serif;
-        margin-top: 110px;
+        margin-top: 140px;
         margin-left: -210px;
         width: 88%;
         line-height:  1.8em;
@@ -305,9 +309,7 @@ footer{
         #Wpp3{
             margin-top: 20px;
         }
-        #Wpp4{
-            margin-top: 70px;
-        }
+
         .TextGrid{
             font-size: 14px;
             font-family:'Montserrat', sans-serif;
@@ -426,9 +428,6 @@ footer{
             margin-top: 20px;
         }
         #Wpp3{
-            margin-top: 20px;
-        }
-        #Wpp4{
             margin-top: 20px;
         }
         

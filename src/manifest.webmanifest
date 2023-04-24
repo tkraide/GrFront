@@ -8,14 +8,8 @@
   "start_url": "./",
   "icons": [
     {
-      "src": "assets/corda.png",
-      "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "maskable any"
-    },
-    {
-      "src": "assets/ngx-rocket-logo@192.png",
-      "sizes": "192x192",
+      "src": "assets/favicon.png",
+      "sizes": "109x125",
       "type": "image/png",
       "purpose": "maskable any"
     }
